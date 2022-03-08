@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/css/chat.css">
+<div id="message-container">
+</div>
+<div id="send-message">
+    <input id="send-input" type="text" placeholder="Message">
+    <button id="send-button" type="submit"><i class="fa-solid fa-paper-plane"></i> </button>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var user = <%- JSON.stringify(locals.user) %>
+</script>
+<script src="/js/chat.js"></script>

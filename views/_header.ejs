@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/header.css">
+<nav id="nav-container">
+    <div id="nav-item1">
+        <div id="brand"><i class="fa-brands fa-whatsapp"></i> <em>WhatsApp</em></div>
+    </div>
+    <div id="nav-item2">
+        <% if(locals.user) {%>
+            <a href='/signout'><button onclick="leaveChat();">Sign Out</button></a>
+            <%} else {%>
+                <a href='/signup'><button>Sign Up</button></a>
+                <a href='/signin'><button>Sign In</button></a>
+                <% } %>
+    </div>
+    <script>
+        // const socket = io();
+        const leaveChat = () => {
+            socket.emit('leave');
+        }
+    </script>
+</nav>

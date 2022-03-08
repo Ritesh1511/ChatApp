@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Shivang Singhal",
   "license": "MIT",
@@ -19,6 +20,7 @@
     "mongoose": "^6.2.4",
     "passport": "^0.5.2",
     "passport-local": "^1.0.0",
-    "socket.io": "^4.4.1"
+    "socket.io": "^4.4.1",
+    "nodemon": "latest"
   }
 }

@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 // connect to the database
 // mongoose.connect('mongodb+srv://admin:mongopass>@iconnect.mxhen.mongodb.net/iconnect?retryWrites=true&w=majority');
-mongoose.connect('mongodb+srv://admin:devilshivang@chat-app.rnfa4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://admin:devilshivang@chat-app.rnfa4.mongodb.net/chat-app?retryWrites=true&w=majority',{
     useUnifiedTopology:true
 });
 

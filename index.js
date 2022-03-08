@@ -38,7 +38,7 @@ app.use(session({
     },
     store: MongoStore.create(
         {
-            mongoUrl: 'mongodb://localhost/chat_app_db'
+            mongoUrl: 'mongodb+srv://admin:devilshivang@chat-app.rnfa4.mongodb.net/chat-app'
         },
         function (err) {
             console.log(err || 'connect-mongodb setup ok');

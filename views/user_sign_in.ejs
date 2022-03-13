@@ -1,7 +1,26 @@
-<h1>Sign In</h1>
+<link rel="stylesheet" href="/css/sign-in.css">
+ <!-- <head> 
+      <%- style %>  
+      <title>WhatsApp</title>
+  </head> -->
+   <!-- <head> 
+      <%- style %>  
+      <title>WhatsApp</title>
+  </head> -->
+  <!-- <form action="/create-session" method="POST"> -->
+  <h1>Sign In</h1>
+  <!-- <form action="/create-session" method="POST"> -->
 
-<form action="/create-session" method="POST">
-    <input type="email" name="email" id="" placeholder="Enter your email" required>
-    <input type="password" name="password" id="" placeholder="Enter your password" required>
-    <button type="submit">Sign In</button>
-</form>
+<div id="sign-in-container">
+    <!-- <form action="/create-session" method="POST"> -->
+    <form action="/create-session" method="POST">
+        <!-- <div id="password">Password:<br><input  type="password"  name="password"  placeholder="Enter your PASSWORD here"  required></div><br> -->
+        <div id="email">Email:<br><input type="email" name="email" placeholder="Enter your EMAIL here" required></div><br>
+        <!-- <form action="/create-session" method="POST"> -->
+        <div id="password">Password:<br><input  type="password"  name="password"  placeholder="Enter your PASSWORD here"  required></div><br>
+        <div  id="submit"><button type="submit">Sign In</button></div>
+
+        <div id="password">Password:<br><input  type="password"  name="password"  placeholder="Enter your PASSWORD here"  required></div><br>
+        <!-- <form action="/create-session" method="POST"> -->
+    </form>
+</div>

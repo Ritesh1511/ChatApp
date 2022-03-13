@@ -1,20 +1,55 @@
-<link rel="stylesheet" href="/css/header.css">
-<nav id="nav-container">
-    <div id="nav-item1">
-        <div id="brand"><i class="fa-brands fa-whatsapp"></i> <em>WhatsApp</em></div>
-    </div>
-    <div id="nav-item2">
-        <% if(locals.user) {%>
-            <a href='/signout'><button onclick="leaveChat();">Sign Out</button></a>
-            <%} else {%>
-                <a href='/signup'><button>Sign Up</button></a>
-                <a href='/signin'><button>Sign In</button></a>
-                <% } %>
-    </div>
-    <script>
-        // const socket = io();
+
+<link rel="stylesheet" href="/css/header.css">  
+    <nav id="nav-container">   
+      <div id="nav-item1">   
+            <!-- <script>         
+        // const leaveChat = () => {
+        //    dsf 
         const leaveChat = () => {
             socket.emit('leave');
-        }
+        }   
+
+    </script> -->      
+        <div id="brand"><i class="fa-brands fa-whatsapp"></i> <em>WhatsApp</em></div>   
+    
+    </div>   
+    <!-- <script>         
+        // const leaveChat = () => {
+        //    dsf 
+        const leaveChat = () => {
+            socket.emit('leave');
+        }   
+
+    </script> -->
+
+    <!-- <div id="brand"><i class="fa-brands fa-whatsapp"></i> <em>WhatsApp</em></div>    -->
+  
+    <div id="nav-item2">
+  
+        <!-- <div id="brand"><i class="fa-brands fa-whatsapp"></i> <em>WhatsApp</em></div>    -->
+  
+        <% if(locals.user) {%>
+  
+            <a href='/signout'><button onclick="leaveChat();">Sign Out</button></a>   
+              <%} else {%>   
+  
+                <a href='/signup'><button>Sign Up</button></a>   
+  
+                         <a href='/signin'><button>Sign In</button></a>   
+                   <% } %>     
+                   <!-- <%} else {%>   
+                    <a href='/signup'><button>Sign Up</button></a>   
+                     <a href='/signin'><button>Sign In</button></a>   
+              <% } %>      -->
+  
+            </div>      
+    <script>         
+        // const leaveChat = () => {
+        //    dsf 
+        const leaveChat = () => {
+            socket.emit('leave');
+        }   
+
     </script>
+
 </nav>

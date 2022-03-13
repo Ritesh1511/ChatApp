@@ -1,15 +1,29 @@
-body{
-    background-color: rgb(220, 236, 236);
+
+  body{
+    background-color: rgb(186, 194, 194);
+} 
+.incoming{  
+    float: left;  
+    clear: both;  
 }
-#message-container{
-    width: 90%;
-    height: 75%;
-    border-radius: 5px;
-    border: 2px solid rgb(196, 188, 188);
-    overflow-y: auto;
-    background-color: white;
-    margin: 2rem auto;
+
+.message{
+    width: fit-content;
+    height: fit-content;
+    margin: 14px;
+    
+    
+    max-width: 32%;
+    
+    color: black;
 }
+ 
+.center{
+    margin: 0.6rem auto;
+     clear: both;
+    color: gray;
+    font-style: italic;
+ }
 
 #send-message{
     width: 95%;
@@ -17,61 +31,98 @@ body{
     text-align: center;
 }
 
+/* 
+body{
+    background-color: rgb(186, 194, 194);
+}
+#message-container{
+    border: 3px solid rgb(187, 147, 147);
+    overflow-y: auto;
+    background-color: rgb(198, 185, 185);
+    margin: 2rem auto;
+    width: 92%;
+    height: 76%;
+    border-radius: 4px;
+    
+} */
+
+/* 
 #send-input{
+    
+    margin-right: 11px;
+    padding: 0.4rem;
+    font-size: large;
     display: inline-block;
     width: 40%;
-    margin-right: 10px;
-    padding: 0.5rem;
-    font-size: large;
 }
 
 #send-button{
     width: fit-content;
-    background-color: #6262a7;
-    color: white;
+    background-color: #a8a8f1;
+    color: rgb(255, 215, 215);
     border: none;
-    padding: 0.5rem;
-    font-size: large;
-}
-
-.message{
-    max-width: 30%;
-    width: fit-content;
-    height: fit-content;
-    margin: 15px;
-    color: black;
-}
+    padding: 0.6rem;
+     font-size: large;
+} */
 
 .mess-outgoing{
-    padding: 10px;
-    color: white;
-    border-radius: 0.5rem;
-    background-color: #6262a7;
+    color: rgb(206, 192, 192);
+    
+    border-radius: 0.6rem;
+    
+    padding: 11px;
+    
+    background-color: #353561;
 }
 
 .mess-incoming{
-    padding: 10px;
-    border-radius: 0.5rem;
-    background-color: rgb(220, 236, 236);
+      padding: 12px;
+    border-radius: 0.6rem;
+    background-color: rgb(183, 236, 236);
+}
+  
+   .message h4{
+      margin: 0;
+  }
+ 
+  .outgoing{
+      float: right;  
+      clear: both;   
+  }
+
+  /* .center{
+     margin: 0.6rem auto;
+      clear: both;
+     color: gray;
+     font-style: italic;
+  } */
+
+#message-container{
+    border: 3px solid rgb(187, 147, 147);
+    overflow-y: auto;
+    background-color: rgb(198, 185, 185);
+    margin: 2rem auto;
+    width: 92%;
+    height: 76%;
+    border-radius: 4px;
+    
 }
 
-.message h4{
-    margin: 0;
+  
+#send-input{
+    
+    margin-right: 11px;
+    padding: 0.4rem;
+    font-size: large;
+    display: inline-block;
+    width: 40%;
 }
 
-.incoming{
-    float: left;
-    clear: both;
-}
-
-.outgoing{
-    float: right;
-    clear: both;
-}
-
-.center{
-    margin: 0.5rem auto;
-    clear: both;
-    color: grey;
-    font-style: italic;
+#send-button{
+    width: fit-content;
+    background-color: #a8a8f1;
+    color: rgb(255, 215, 215);
+    border: none;
+    padding: 0.6rem;
+    font-size: large;
 }

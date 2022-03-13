@@ -1,0 +1,68 @@
+  
+  input{
+    width: 21rem;
+    
+    font-size: large;
+
+    border-radius: 0.3rem;
+         
+               
+    display: inline-block;
+     margin-top: 0.4rem;
+     border: none;       
+   
+        height: 2.4rem;
+} 
+   h1{
+  
+    text-align: center;
+    color: #575779;
+     font-weight: bold;  
+
+    font-style: italic;
+     margin-top: 5rem;
+  
+}  
+
+ 
+
+  
+ 
+     
+#submit {  
+      text-align: center;   
+}
+
+#sign-in-container div {  
+    /* margin: 0.4rem; */
+    margin: 0.4rem;
+}
+  
+
+#sign-in-container{
+   
+     margin: auto;
+     background-color: rgb(215, 246, 246);
+
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.6rem;
+    border-radius: 0.6rem;
+
+}
+#submit button {    
+    
+    padding: 0.6rem 1rem;
+    
+    background-color: #7e7eb8;
+    
+    color: rgb(224, 212, 212);
+    
+
+     border: none;  
+    
+     font-size: larger;
+   
+}

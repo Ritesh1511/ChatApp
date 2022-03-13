@@ -1,14 +1,14 @@
 {
-  "name": "chat_app",
+  "name": "Project application",
   "version": "1.0.0",
-  "description": "Chat App",
+  "description": "Chat Application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "author": "Shivang Singhal",
+  "author": "Ritesh Kaushik",
   "license": "MIT",
   "dependencies": {
     "connect-mongo": "^4.6.0",
@@ -17,10 +17,11 @@
     "express": "^4.17.3",
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.17.2",
+    "i": "^0.3.7",
     "mongoose": "^6.2.4",
+    "nodemon": "latest",
     "passport": "^0.5.2",
     "passport-local": "^1.0.0",
-    "socket.io": "^4.4.1",
-    "nodemon": "latest"
+    "socket.io": "^4.4.1"
   }
 }

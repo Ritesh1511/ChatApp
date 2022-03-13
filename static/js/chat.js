@@ -1,21 +1,35 @@
-const socket = io();
+ const socket = io();//sd
+  //socket.emit('new-user-joined', user.name);
+  //socket.emit('new-user-joined', user.name);       
+ 
+  socket.emit('new-user-joined', user.name);
 
-socket.emit('new-user-joined', user.name);
 
-let message_input = document.querySelector('#send-input');
 let message_container = document.querySelector('#message-container');
 
+let message_input = document.querySelector('#send-input');
+
 const appendUser = (message, position) => {
+
     const messageElement = document.createElement('div');
+  
     messageElement.innerText = message;
+  
     messageElement.classList.add('message');
+  
     messageElement.classList.add(position);
+    //messageElement.classList.add(position1);
+  
     message_container.appendChild(messageElement);
+    //message_container.appendChild(messageElement21);
+
 }
 
-const appendMessage = (message, position) => {
-    const messageElement = document.createElement('div');
-    const userName = document.createElement('h4');
+
+
+  const appendMessage = (message, position) => {
+      const messageElement = document.createElement('div');
+      const userName = document.createElement('h4');
     const userMessage = document.createElement('div');
 
     messageElement.classList.add('message');
